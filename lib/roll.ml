@@ -1,16 +1,16 @@
 (* Fate Dice roller *)
-open Unix;;
 
-let () = Unix.time () |> Int.of_float |> Random.init;;
+let () = Unix.time () |> Int.of_float |> Random.init
+
+let df () = Random.int 3 - 1
 
 let roll n = 
-    let df () = Random.int 3 - 1
-    in let count = ref 0
-    in for c = 1 to n
+    let count = ref 0
+    in for _ = 1 to n
     do 
         count := !count + df ()
     done;
-    !count;;
+    !count
 
-let fate n = n + roll 4;;
+let fate n = n + roll 4
 
