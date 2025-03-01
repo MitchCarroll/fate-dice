@@ -1,0 +1,4 @@
+(executable
+ (public_name fate)
+ (name main)
+ (libraries fate))
