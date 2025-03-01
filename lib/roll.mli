@@ -7,9 +7,9 @@
 val df : unit -> int
 
 (** [roll n] roll ndF *)
-val roll : int n -> int
+val roll : int -> int
 
-(** [fate n] roll 4dF+n *)
-(** This is the standard FATE dice roll used in the FATE RPG rules. *)
-val fate : int n -> int
+(** [fate n] roll 4dF+n.
+ * This is the standard FATE dice roll used in the FATE RPG rules. *)
+val fate : int -> int
 
