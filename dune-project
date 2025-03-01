@@ -5,11 +5,11 @@
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github MitchCarroll/fate-dice))
 
-(authors "Author Name <author@example.com>")
+(authors "C. Mitch Carroll <c.mitch.carroll@gmail.com>")
 
-(maintainers "Maintainer Name <maintainer@example.com>")
+(maintainers "C. Mitch Carroll <c.mitch.carroll@gmail.com>")
 
 (license LICENSE)
 
@@ -17,10 +17,10 @@
 
 (package
  (name fate)
- (synopsis "A short synopsis")
- (description "A longer description")
+ (synopsis "A dice roller for Fate Dice")
+ (description "This project comprises a library for rolling Fate Dice, and ultimately a user app.")
  (depends ocaml)
  (tags
-  ("add topics" "to describe" your project)))
+  ("FATE" "dice" "roller" "RPG" "TTRPG")))
 
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/reference/dune-project/index.html
