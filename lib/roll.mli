@@ -1,10 +1,10 @@
 (** Fate Dice roller module *)
 
-(** Roll 1dF *)
 val df : unit -> int
+(** Roll 1dF *)
 
-(** roll ndF *)
 val roll : int -> int
+(** roll ndF *)
 
-(** roll 4dF+n *)
 val fate : int -> int
+(** roll 4dF+n *)
