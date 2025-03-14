@@ -10,13 +10,13 @@ val roll : int -> int
     This is the standard FATE dice roll used in the FATE RPG rules. *)
 val fate : int -> int
 
-(** [adv n] roll 4dF+n with advantage.
+(** [adv a n] roll 4dF+n with [a] advantage dice.
     Advantage means that one of the dice has its
     value increased by 1 (but no more than the regular
-    max value of the die) *)
-val adv : int -> int
+    max value of that die) *)
+val adv : int -> int -> int
 
-(** [dis n] roll 4dF+n with disadvantage.
+(** [dis d n] roll 4dF+n with [d] disadvantage dice.
     Disadvantage works like advantage, but
-    with the bonus die REDUCED by one value. *)
-val dis : int -> int
+    with the bonus die rolls REDUCED by one value. *)
+val dis : int -> int -> int
