@@ -2,24 +2,24 @@
 
 let () = Unix.time () |> Int.of_float |> Random.init
 
-let df () = Random.int 3 - 1
+let df () = Some ((Random.int 3) - 1)
 
 let da () = 
-    match df () with
-    | (-1) -> 0
+    match Option.get (df ()) with
+    | (-1) -> Some 0
     | 0 
-    | 1 -> 1
-    | _ -> 0
+    | 1 -> Some 1
+    | _ -> None
 
 let dd () = 
-    match df () with
+    match Option.get (df ()) with
     | (-1) 
-    | 0 -> (-1)
-    | 1 -> 0
-    | _ -> 0
+    | 0 -> Some (-1)
+    | 1 -> Some 0
+    | _ -> None
 
 let rolls f n = 
-    List.init n (fun _ -> f ()) 
+    List.init n (fun _ -> f () |> Option.get) 
     |> List.fold_left (+) 0
 
 let roll n = rolls df n
