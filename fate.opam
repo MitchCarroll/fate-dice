@@ -8,7 +8,7 @@ authors: ["C. Mitch Carroll <c.mitch.carroll@gmail.com>"]
 license: "LICENSE"
 tags: ["FATE" "dice" "roller" "RPG" "TTRPG"]
 homepage: "https://github.com/MitchCarroll/fate-dice"
-doc: "https://url/to/documentation"
+doc: "https://github.com/MitchCarroll/fate-dice/wiki"
 bug-reports: "https://github.com/MitchCarroll/fate-dice/issues"
 depends: [
   "dune" {>= "3.17"}
