@@ -19,7 +19,7 @@
  (name fate)
  (synopsis "A dice roller for Fate Dice")
  (description "This project comprises a library for rolling Fate Dice, and ultimately a user app.")
- (depends ocaml)
+ (depends ocaml utop unix)
  (tags
   ("FATE" "dice" "roller" "RPG" "TTRPG")))
 
